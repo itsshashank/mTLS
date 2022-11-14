@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package timenow;
+
+option go_package = "github.com/itsshashank/gtimenow/timenow";
+
+service TimeServer{
+    rpc TimeNow(stream Response) returns (stream Response);
+    rpc Hello(Response) returns (Response);
+}
+
+message Response{
+    int64 word = 1; 
+}

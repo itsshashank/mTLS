@@ -1,0 +1,1 @@
+openssl req -x509 -nodes -newkey ec -pkeyopt ec_paramgen_curve:secp384r1 -keyout ecdsa.pem -out mycert.crt -days 30
